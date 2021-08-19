@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SVG Z index</title>
 </head>
+
 <body>
     <svg width="400" height="400" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <circle class="my_circle" cx="100" cy="100" r="50" fill="red" />
@@ -14,12 +16,13 @@
     </svg>
     <script>
         document.querySelectorAll("circle").forEach(each => { each.addEventListener("click", theClick) })
-        function theClick() {        
+        function theClick() {
             let list = this.parentElement;
-            list.appendChild(this);        
+            list.appendChild(this);
         }
 
-        
+
     </script>
 </body>
+
 </html>
